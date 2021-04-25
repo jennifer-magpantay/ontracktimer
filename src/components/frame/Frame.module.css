@@ -1,0 +1,14 @@
+.frame__container {
+  width: 60%;
+  position: relative;
+  margin-top: 2em;
+  padding: 1em 2em;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+}
+
+@media (min-width: 600px) {
+  .frame__container {
+    width: 40%;
+  }
+}

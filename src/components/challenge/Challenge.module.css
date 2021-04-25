@@ -1,0 +1,14 @@
+.challenge__title {
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid var(--gray);
+  font-size: clamp(1.4em, 1.6vw, 1.6em);
+  font-weight: 600;
+  text-align: center;
+}
+
+.challenge__description {
+  padding-bottom: 1em;
+  border-bottom: 1px solid var(--gray);
+  font-size: clamp(1.2em, 1.4vw, 1.4em);
+}

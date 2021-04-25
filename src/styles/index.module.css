@@ -1,0 +1,10 @@
+.home__container {
+  min-height: 100vh;
+}
+
+.main__container {
+  /* height: calc(100vh - 4em); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

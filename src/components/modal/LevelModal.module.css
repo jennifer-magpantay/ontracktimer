@@ -1,0 +1,51 @@
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--overlay);
+}
+
+.modal__container {
+  padding: 2em;
+  background-color: var(--bc-color);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  transform: scale(0.5);
+  animation: scaleUp 0.5s ease forwards;
+}
+
+.modal__container header {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid var(--gray);
+  color: var(--text-color);
+}
+
+.modal__button {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    padding: 0.25em 0.75em;
+    background-color: var(--bc-color);
+    border: 2px solid var(--blue);
+    border-radius: 100%;
+    color: var(--blue);
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.modal__button:focus, .modal__button:hover{
+  background-color: var(--blue);
+  color: #fff;
+}
+
+@keyframes scaleUp {
+    to {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,120 @@
+/* TIMER */
+.timer__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 0.5em;
+  font-family: Rajdhani;
+  font-weight: 600;
+}
+
+.timer__container > div {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--lg-gray);
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+  font-size: 5rem;
+  text-align: center;
+}
+
+.timer__container > div span {
+  flex: 1;
+}
+
+.timer__container > div span:first-child {
+  border-right: 1px solid var(--gray);
+}
+
+.timer__container > span {
+  font-size: 6rem;
+  margin: 0 0.1em;
+}
+
+/* BUTTONS */
+/* buttonStart */
+.buttonStart {
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  color: #fff;
+  /* font-size: 1.4rem; */
+}
+
+.buttonStart:disabled,
+.buttonChallenge:disabled {
+  background-color: #fff;
+  border: 1px solid var(--gray);
+  color: var(--gray);
+  pointer-events: none;
+}
+
+.buttonStart:hover {
+  background-color: var(--dk-blue);
+}
+
+.button__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* buttonPause */
+.buttonPause:not(:disabled) {
+  background-color: #fff;
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+.buttonPause:disabled {
+  background-color: #fff;
+  border: 1px solid var(--gray);
+  color: var(--gray);
+  pointer-events: none;
+}
+
+.buttonPause:not(:disabled):hover {
+  border: 1px solid var(--dk-blue);
+  color: var(--dk-blue);
+}
+
+/* buttonReset */
+.buttonReset:not(:disabled) {
+  background-color: #fff;
+  border: 1px solid var(--gray);
+  color: var(--gray);
+  transition: all 0.5s;
+}
+
+.buttonReset:not(:disabled):hover {
+  border: 1px solid #282828;
+  color: #282828;
+}
+
+.buttonReset:disabled {
+  background-color: #fff;
+  color: var(--gray);
+  pointer-events: none;
+}
+
+/* buttonChallenge */
+.buttonChallenge {
+  background-color: var(--green);
+  color: #fff;
+}
+
+.buttonChallenge:not(:disabled):hover {
+  background-color: var(--dk-green);
+}
+
+/* buttonComplete */
+.buttonCompleted {
+  background-color: var(--orange);
+  color: #fff;
+}
+
+.buttonCompleted:hover {
+  background-color: var(--dk-orange);
+  color: #fff;
+}

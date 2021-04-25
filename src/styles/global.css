@@ -1,0 +1,56 @@
+@import "./reset.css";
+
+/* VARIABLES */
+:root {
+  --bc-color: #f5f6fa;
+  --text-color: #282828;
+  --blue: #3498db;
+  --dk-blue: #2980b9;
+  --green: #2ecc71;
+  --dk-green: #27ae60;
+  --orange: #ff7f50;
+  --dk-orange:#ff6348;
+  --error: #e84118;
+  --lg-gray: #f1f2f6;
+  --gray: #bdc3c7;
+  --box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.25);
+  --overlay: rgba(0,0,0,0.5);
+}
+
+/* GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: auto;
+}
+
+body {
+  background-color: var(--bc-color);
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+}
+
+body,
+input,
+textarea,
+button {
+  font-size: clamp(1.2rem, 1.4vw, 1.4rem);
+  font-weight: 400;
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, strong {
+  color: var(--text-color);
+}
+
+
